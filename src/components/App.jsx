@@ -1,10 +1,10 @@
-import css from './components/statistics-class.module.css';
+import css from './statistics-class.module.css';
 import { Component } from 'react';
 
-import Statistics from './components/Statistics';
-import FeedbackOptions from './components/FeedbackOptions';
-import Section from './components/Section';
-import Notification from './components/Notification';
+import Statistics from './Statistics';
+import FeedbackOptions from './FeedbackOptions';
+import Section from './Section';
+import Notification from './Notification';
 
 class StatisticsClass extends Component {
   state = {
