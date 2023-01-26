@@ -33,19 +33,16 @@ class StatisticsClass extends Component {
   }
 
   render() {
-    const good = this.state.good;
-    const neutral = this.state.neutral;
-    const bad = this.state.bad;
+    const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
-    const options = ['good', 'neutral', 'bad'];
     const onLeaveFeedback = this.feedbackCounter;
 
     return (
       <div className={css.wrapper}>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={options}
+            options={Object.keys(this.state)}
             onLeaveFeedback={onLeaveFeedback}
           />
         </Section>
